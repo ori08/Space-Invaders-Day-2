@@ -1,5 +1,5 @@
 'use strict'
-var HERO = '<img src="img/spaceship1.png" />';
+var HERO = '<img src="img/Spaceship1.png" />';
 
 var LASER = '<img src="img/laser.png" />';
 var LASER_SPEED = 80;
