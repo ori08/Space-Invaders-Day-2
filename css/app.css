@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* flex-direction: column; */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+td {
+  background-image: url(../img/cell.png);
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+}
+
+table {}
+
+/* td span {
+  opacity: 0%;
+
+} */
+
+.opacity {
+  opacity: 100%;
+}
+
+.gameBoard {
+  display: block;
+
+  display: block;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  margin: 0 auto;
+}
+
+/* .cell {
+  opacity: 0%;
+} */
+
+img {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+
+.gameOverModal {
+  display: none;
+}
+
+
+.winModal {
+  display: none;
+}
+
+.modal {
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(96, 96, 97, 0.6);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.costomizeModal {
+  display: none;
+}
+
+
+
+.sideBar {
+  min-height: 500px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(85, 115, 180);
+  border-radius: 20px;
+
+}
+
+p {
+
+  border-top: 1px black solid;
+  font-size: 20px;
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+}
+
+h4 {
+  margin-block-end: 5px;
+  margin-block-start: 5px;
+}
+
+
+.spritGroup {
+  background-color: rgb(55, 106, 151);
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+.Customize-Mode {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(15, 44, 70);
+  border-radius: 20px;
+}
+
+button {
+  margin-top: 1px;
+  box-shadow: inset 0px 1px 0px 0px #4026b3;
+  background: linear-gradient(to bottom, #180c86 5%, #3b31c5 100%);
+  background-color: #4e18e2;
+  border-radius: 6px;
+  border: 1px solid #3f13a7;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #20135e;
+}

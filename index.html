@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Invaceble</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+
+
+
+<body onload="init()" onkeyup="readKeyboard(event)">
+    <div class="sideBar  animate__animated animate__lightSpeedInRight">
+        <button onclick="startGame()">start game</button>
+        <button onclick="setLevel('Easy')">Easy</button>
+        <button onclick="setLevel('Normal')">Normal</button>
+        <button onclick="setLevel('Hard')">Hard</button>
+        <button onclick="openModal('.costomizeModal')">costomize</button>
+
+        <h4>Score: <span class=" score">0</span></h4>
+        <p class="superMode"></p>
+        <p class="lives"></p>
+        <p class="timer"></p>
+    </div>
+
+    <div>
+        <table>
+            <tbody class=" gameBoard  animate__animated animate__lightSpeedInRight">
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="modal costomizeModal">
+        <div class="modal-container">
+            <div class="Customize-Mode">
+                <h1>Customize Mode</h1>
+                <h2>Alliens Sprit:</h2>
+                <div class="spritGroup allienGroup">
+                </div>
+                <h2>spaceship Sprit:</h2>
+                <div class="spritGroup spaceshipGroup">
+                </div>
+
+                <button onclick="closeModal('.costomizeModal')">close</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="modal winModal">
+        <div class="modal-container">
+            <h2>
+                congrate U win
+                <br>
+                for play again press "Restart game"
+            </h2>
+            <button onclick="resetGame()">Restart Game</button>
+        </div>
+    </div>
+
+
+
+    <div class="modal gameOverModal">
+        <div class="modal-container">
+            <h2> Game Over
+
+            </h2>
+            <button onclick="resetGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/aliens.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
